@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -25,7 +24,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed w-full z-50 transition-all duration-300 font-sans ${
         isScrolled 
           ? 'py-3 bg-white/90 backdrop-blur-md shadow-sm' 
           : 'py-5 bg-transparent'
@@ -34,34 +33,24 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="relative h-10 w-10">
-              <div className="absolute inset-0 rounded-full border-2 border-primary-teal flex items-center justify-center">
-                <span className="text-primary-teal font-bold text-lg">∞</span>
-              </div>
-            </div>
-            <div>
-              <span className="font-bold text-xl text-primary-teal">INFINITY</span>
-              <div className="flex items-center">
-                <span className="text-secondary-green font-medium text-sm">HR SERVICES</span>
-              </div>
-            </div>
+            <img src="/public/_assets/logo 3.jpg" alt="Logo" className="h-10" />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-sm font-medium hover:text-primary-teal transition-colors">
+            <Link to="/" className="text-base font-medium hover:text-primary-teal transition-colors">
               Home
             </Link>
-            <Link to="/about" className="text-sm font-medium hover:text-primary-teal transition-colors">
+            <Link to="/about" className="text-base font-medium hover:text-primary-teal transition-colors">
               About
             </Link>
-            <Link to="/services" className="text-sm font-medium hover:text-primary-teal transition-colors">
+            <Link to="/services" className="text-base font-medium hover:text-primary-teal transition-colors">
               Services
             </Link>
-            <Link to="/contact" className="text-sm font-medium hover:text-primary-teal transition-colors">
+            <Link to="/contact" className="text-base font-medium hover:text-primary-teal transition-colors">
               Contact
             </Link>
-            <Button className="bg-primary-teal hover:bg-primary-teal/90 text-white">
+            <Button className="bg-primary-teal hover:bg-primary-teal/90 text-white text-base">
               Schedule Consultation
             </Button>
           </nav>
@@ -114,7 +103,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Button 
-              className="bg-primary-teal hover:bg-primary-teal/90 text-white w-full"
+              className="bg-primary-teal hover:bg-primary-teal/90 text-white w-full text-base"
               onClick={() => setIsMenuOpen(false)}
             >
               Schedule Consultation

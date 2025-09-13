@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
@@ -50,22 +49,19 @@ export default function Hero() {
             </div>
           </div>
           
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end animate-fade-in animate-delay-100">
-            <div className="max-w-md bg-white rounded-xl shadow-md p-6">
-              <div className="flex justify-center mb-5">
-                <div className="relative w-20 h-20">
-                  <div className="absolute inset-0 rounded-full border-2 border-primary-teal"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-primary-teal font-bold text-2xl">∞</span>
-                  </div>
-                </div>
-              </div>
+          <div className="w-full lg:w-1/2 flex justify-center animate-fade-in animate-delay-100">
+            <div className="max-w-lg bg-white rounded-xl shadow-md p-6">
               
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-primary-teal">INFINITY</h3>
-                <p className="text-lg text-secondary-green">HR SERVICES</p>
-              </div>
+              <div className="flex justify-center">
+               <img src="/public/_assets/logo1.png" alt="Logo" className="h-14 mb-1" />
+             </div>
+
+             <div className="flex justify-center">
+               <img src="/public/_assets/InifityHr Text.png" alt="Logo" className="h-14 mb-1" />
+             </div>
               
+              
+
               <h3 className="text-lg font-bold mb-4 text-center">We Specialize In:</h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
